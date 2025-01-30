@@ -127,6 +127,11 @@ h1 {
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     animation: pulse 1.5s infinite;
+    display: block;
+    margin: 20px auto; /* Centrar automáticamente */
+    text-align: center;
+    font-size: 1.5rem; 
+    padding: 1.2rem 2.5rem;
 }
 
 @keyframes pulse {
@@ -143,6 +148,31 @@ h1 {
         box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
     }
 }
-.texto{
+.texto, h1,p{
   color:white;
+}
+/*icon*/
+.gift-icon {
+  display: inline-block;
+  font-size: 40px; /* Ajusta el tamaño según necesites */
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.regalo {
+  border: 2px solid #ccc; /* Borde para resaltar */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  background-color: #635e5e; /* Color de fondo */
+  max-width: 400px; /* Ajusta el ancho según necesites */
+  margin: 20px auto; /* Centrar el div */
+  text-align: center; /* Centrar el texto */
 }
