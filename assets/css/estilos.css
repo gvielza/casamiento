@@ -94,28 +94,40 @@ h1 {
     
   
   }
+  #heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evita que interfiera con clics */
+    overflow: hidden; /* No permite que los corazones cambien el tamaño de la página */
+}
 
   .heart {
     position: absolute;
     color: red;
     font-size: 20px;
-    animation: float 4s linear infinite;
+    animation: float 6s linear infinite;
     opacity: 0;
+    pointer-events: none; /* Evita que interfieran con clics */
+    overflow: hidden;
   }
 
-  @keyframes float {
+@keyframes float {
     0% {
-      transform: translateY(0) scale(0.5);
-      opacity: 0;
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
     }
-    50% {
-      opacity: 1;
+    20% {
+        opacity: 1;
     }
     100% {
-      transform: translateY(-100vh) scale(1);
-      opacity: 0;
+        transform: translateY(-150vh) scale(1);
+        opacity: 0;
     }
-  }
+}
+
 
   /*boton*/
   .button {
@@ -168,14 +180,25 @@ h1 {
   }
 }
 
+.regalo p {
+  margin: 0;  /* Elimina márgenes adicionales */
+  line-height: 1; /* Reduce la altura de línea */
+}
+
 .regalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 300px;
   border: 2px solid #ccc; /* Borde para resaltar */
-  padding: 20px; /* Espaciado interno */
+  
   border-radius: 10px; /* Esquinas redondeadas */
   background-color: #635e5e; /* Color de fondo */
-  max-width: 400px; /* Ajusta el ancho según necesites */
+  max-width: 400px; 
   margin: 20px auto; /* Centrar el div */
   text-align: center; /* Centrar el texto */
+  
 }
 .hero2 {
   display: flex;
@@ -187,17 +210,23 @@ h1 {
   font-size: medium;
   text-align: center;
   }
-  @font-face {
-    font-family: 'FrederickatheGreat'; /* Nombre de la fuente */
-    src: url('../fonts/FrederickatheGreat-Regular.ttf') format('truetype'); /* Ruta al archivo .ttf */
-    font-weight: normal; /* Peso normal de la fuente */
-    font-style: normal; /* Estilo normal de la fuente */
+ /* @font-face {
+    font-family: 'FrederickatheGreat';
+    src: url('../fonts/FrederickatheGreat-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
+
 body {
-  font-family: 'FrederickatheGreat', sans-serif; /* Usa tu fuente */
+  font-family: 'FrederickatheGreat', sans-serif; 
 }
 
 h1 {
   font-family: 'FrederickatheGreat', sans-serif;
- /* si tienes otras variantes de la fuente, usa aqui  font-weight: bold, font-style: italic  */
+ 
+}*/
+.mystery-quest-regular {
+  font-family: "Mystery Quest", serif;
+  font-weight: 400;
+  font-style: normal;
 }
