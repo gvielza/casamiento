@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Playwrite+NO:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
+
 .hero {
     display: flex;
     align-items: center;
@@ -176,3 +178,10 @@ h1 {
   margin: 20px auto; /* Centrar el div */
   text-align: center; /* Centrar el texto */
 }
+.hero2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  
