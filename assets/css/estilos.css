@@ -202,7 +202,7 @@ h1 {
   text-align: center; /* Centrar el texto */
   
 }
-.hero2,#vestimenta {
+.hero2,#vestimenta, .texto {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,5 +235,6 @@ h1 {
 #hero-text,.alias{
   
   font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
   
 }
