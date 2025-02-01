@@ -5,9 +5,10 @@
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    background: url('../img/20211205_034145.jpg') center/cover no-repeat;
+    background: url('../img/20240327_162235.jpg') center/cover no-repeat;
     position: relative;
     padding: 20px;
+    opacity: 100;
 }
 .hero::before {
     content: '';
@@ -18,7 +19,7 @@
     height: 100%;
     background-color: rgba(116, 120, 121, 0.7); /* Fondo blanco semitransparente */
     
-    z-index: 1;
+    z-index: 0;
 }
 .hero-text {
     margin-right: 20px;
@@ -201,7 +202,7 @@ h1 {
   text-align: center; /* Centrar el texto */
   
 }
-.hero2 {
+.hero2,#vestimenta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +232,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
-#hero-text{
+#hero-text,.alias{
   
   font-family: 'Times New Roman', Times, serif;
   
